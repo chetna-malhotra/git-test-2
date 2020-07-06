@@ -1,0 +1,23 @@
+{
+  "name": "git-test-2",
+  "version": "1.0.0",
+  "description": "\"Simple node examples\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"node index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chetna-malhotra/git-test-2.git"
+  },
+  "keywords": [
+    "Chetna"
+  ],
+  "author": "Chetna",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chetna-malhotra/git-test-2/issues"
+  },
+  "homepage": "https://github.com/chetna-malhotra/git-test-2#readme"
+}
