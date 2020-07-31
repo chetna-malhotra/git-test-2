@@ -4,15 +4,11 @@ require('mongoose-currency').loadType(mongoose);
 const Currency=mongoose.Types.Currency;
 
 
-const dishSchema=new Schema({
+const promoSchema=new Schema({
 	name:{
 		type:String,
 		required:true,
 		unique:true
-	},
-	description:{
-		type:String,
-		required:true
 	},
 	image:{
 		type:String,
@@ -27,14 +23,18 @@ const dishSchema=new Schema({
 		required:true,
 		min:0
 	},
+	description:{
+		type:String,
+		required:true
+	},
 	featured:{
 		type:Boolean,
-		default:true
+		default:false
 	}
 },{ timestamps:true
 
 });
 
 
-var Dishes=mongoose.model('Dish',dishSchema);
-module.exports=Dishes;
+var Promos=mongoose.model('Promo',promoSchema);
+module.exports=Promos;
